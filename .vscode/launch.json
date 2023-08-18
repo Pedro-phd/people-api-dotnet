@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "name": "C#: rinha-backend [Default Configuration]",
+      "type": "dotnet",
+      "request": "launch",
+      "projectPath": "${workspaceFolder}/rinha-backend.csproj"
+    }
+  ]
+}

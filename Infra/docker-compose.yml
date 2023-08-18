@@ -1,0 +1,12 @@
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: "dbpassword"
+      POSTGRES_DB: "peoples"
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./create-script.sql:/docker-entrypoint-initdb.d/create-script.sql
+      - ./initial-data.sql:/docker-entrypoint-initdb.d/inital-data.sql
+      # - /tmp/database/rinha:/var/lib/postgresql/data
